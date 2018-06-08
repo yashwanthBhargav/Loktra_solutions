@@ -14,4 +14,6 @@ def crawl(url,clas,span):
 def query2(pg,kw):
     url= 'http://www.shopping.com/products~PG-'+str(pg)+'?KW='+str(kw)
     temp=crawl(url,"gridItemBtm","span")
-    return"Total no of results for Keyword: "+str(kw)+" on page: "+ str(pg)+" are: "+str(len(temp)) 
+    return "Total no of results for Keyword: "+str(kw)+" on page: "+ str(pg)+" are: "+str(len(temp)) 
+
+print query2(<Page Number>,<Keyword>)
